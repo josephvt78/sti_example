@@ -14,6 +14,18 @@ Things you may want to cover:
     rails db:create
     rails s
     ```
+
+    To commit additions to the project:
+    ```bash
+    git remote add origin https://github.com/josephvt78/sti_example.git
+    git push -u origin main
+    ```
+
+    Initial models:
+    ```bash
+    rails g model Event type params:json
+    rails g model Notification recipient:belongs_to{polymorphic}
+    ```
   
 
 * Ruby version
